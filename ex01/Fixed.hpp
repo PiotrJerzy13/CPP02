@@ -4,32 +4,28 @@
 #include <iostream>
 #include <cmath>
 
-class Fixed {
+class Fixed 
+{
 private:
-    int fixedPointValue;                      // Stores the fixed-point value
-    static const int fractionalBits = 8;     // Number of fractional bits (constant)
+    int fixedPointValue;
+    static const int fractionalBits = 8;
 
 public:
-    // Orthodox Canonical Form
-    Fixed();                                 // Default constructor
-    Fixed(const Fixed& other);              // Copy constructor
-    Fixed& operator=(const Fixed& other);   // Copy assignment operator
-    ~Fixed();                                // Destructor
+    Fixed();
+    Fixed(const Fixed& other);
+    Fixed& operator=(const Fixed& other);
+    ~Fixed();
 
-    // New constructors
-    Fixed(const int value);                 // Constructor from integer
-    Fixed(const float value);               // Constructor from floating-point
+    Fixed(const int value);
+    Fixed(const float value);
 
-    // Conversion methods
-    float toFloat(void) const;              // Converts fixed-point to float
-    int toInt(void) const;                  // Converts fixed-point to integer
+    float toFloat(void) const;
+    int toInt(void) const;
 
-    // Getters and Setters
-    int getRawBits(void) const;             // Returns the raw fixed-point value
-    void setRawBits(int const raw);         // Sets the raw fixed-point value
+    int getRawBits(void) const;
+    void setRawBits(int const raw);
 };
 
-// Overload << operator
 std::ostream& operator<<(std::ostream& os, const Fixed& fixed);
 
 #endif
