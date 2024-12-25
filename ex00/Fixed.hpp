@@ -3,21 +3,19 @@
 
 #include <iostream>
 
-class Fixed {
+class Fixed 
+{
 private:
-    int fixedPointValue;                      // Stores the fixed-point value
-    static const int fractionalBits = 8;     // Number of fractional bits (constant)
+    int fixedPointValue;
+    static const int fractionalBits = 8;
 
 public:
-    // Orthodox Canonical Form
-    Fixed();                                 // Default constructor
-    Fixed(const Fixed& other);              // Copy constructor
-    Fixed& operator=(const Fixed& other);   // Copy assignment operator
-    ~Fixed();                                // Destructor
-
-    // Getters and Setters
-    int getRawBits(void) const;             // Returns the raw fixed-point value
-    void setRawBits(int const raw);         // Sets the raw fixed-point value
+    Fixed();
+    Fixed(const Fixed& other);
+    Fixed& operator=(const Fixed& other);
+    ~Fixed();
+    int getRawBits(void) const;
+    void setRawBits(int const raw); 
 };
 
 #endif
