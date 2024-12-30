@@ -16,8 +16,8 @@ public:
     Fixed& operator=(const Fixed& other);
     ~Fixed();
 
-    Fixed(const int value);
-    Fixed(const float value);
+	explicit Fixed(const int value);
+    explicit Fixed(const float value);
 
     float toFloat(void) const;
     int toInt(void) const;

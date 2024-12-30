@@ -1,2 +1,5 @@
 *.o
+*.txt
 .DS_Store
+*.txt
+*.pdf
