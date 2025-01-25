@@ -1,4 +1,3 @@
-```markdown
 # C++ Module 02: Fixed-Point Numbers and Operator Overloading
 
 This repository contains my solutions to **C++ Module 02**, focusing on ad-hoc polymorphism, operator overloading, and the Orthodox Canonical Class Form. While the module targets C++98, the code has been adapted to align with modern **C++17** practices for better readability and maintainability.
